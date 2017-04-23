@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.0.xsd
+           http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-2.0.xsd
+           http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-2.0.xsd"
+           default-autowire="byName" default-lazy-init="true" >
+	<!-- 使用默认的构造器 -->
+<!-- 	<bean id="helloWithoutParam" class="com.ezparking.spring.reflect03.HelloTestImpl"></bean>
+ -->	
+ 
+ 
+	<!-- 使用参数构造器 -->
+	<bean id="helloWithParam" class="com.ezparking.spring.test.HelloTestImpl">
+		<!-- 指定构造器参数 -->
+		<constructor-arg index="0" value="带参数的Hello"></constructor-arg>
+	</bean>
+           
+     <!-- 使用静态工厂实例化 -->
+    <!-- <bean id="helloTestStaticFactory" class="com.ezparking.spring.reflect03.HelloTestStaticFactory" 
+    factory-method="newInstance">
+    	<constructor-arg index="0" value="静态工厂实例化Hello"/>
+    </bean> -->
+    
+<!--     使用实例工厂实例化-->    
+	<!-- <bean id="helloTestInstanceFactory" class="com.ezparking.spring.reflect03.HelloTestInstanceFactory" />
+    <bean id="helloTestInstance" factory-bean="helloTestInstanceFactory" factory-method="newInstanceFactory">
+    	<constructor-arg index="0" value="实例化工厂实例Hello" />
+    </bean> -->
+</beans>

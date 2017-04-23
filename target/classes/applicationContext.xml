@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+	xmlns:jpa="http://www.springframework.org/schema/data/jpa" xmlns:task="http://www.springframework.org/schema/task" 
+	xsi:schemaLocation="
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+		http://www.springframework.org/schema/data/jpa http://www.springframework.org/schema/data/jpa/spring-jpa-1.3.xsd
+		http://www.springframework.org/schema/task http://www.springframework.org/schema/task/spring-task-4.0.xsd">
+
+	<!-- 引入注解扫描器 -->
+	<context:annotation-config />
+	
+	<mvc:annotation-driven />
+
+	<task:annotation-driven/>
+	
+	<!-- 配置要扫描的包 -->
+	<context:component-scan base-package="com.ezparking.spring" />
+
+	<!-- <bean id="helloWithoutParam" class="com.ezparking.spring.test.HelloTestImpl"></bean>
+
+	<bean id="helloWithParam" class="com.ezparking.spring.test.HelloTestImpl">
+		指定构造器参数
+		<constructor-arg index="0" value="带参数的Hello"></constructor-arg>
+	</bean>
+
+	<bean id="person" class="com.ezparking.spring.test.Person"></bean>
+
+	<bean id="main" class="com.ezparking.spring.test.Main"></bean> -->
+
+</beans>
