@@ -10,19 +10,17 @@
 </head>
 <body>
 <form action="push.do" method="post" accept-charset="UTF-8">
-	<label for="title">title</label><input type="text" id="title" name="title" class="title"/><br>
-	<label for="icon_url">icon_url</label><input type="text" id="iconUrl" name="iconUrl" /><br>
-	<label for="content">content</label><textarea rows="3" cols="40" class="content" name="content" ></textarea><br id="contentBr">
-	<button type="button" onclick="addContent()">增加content</button><br>
-	<label for="url">url</label><input type="text" class="url" name="url"><br id="urlBr">
-	<button type="button" onclick="addUrl()">增加url</button><br>
+	<!-- <label for="title">title</label><input type="text" id="title" name="title" class="title"/>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick="">增加content</button>&nbsp;&nbsp;<button type="button" onclick="addUrl()">增加url</button><br><br>
+	<label for="icon_url">icon_url</label><input type="text" id="iconUrl" name="iconUrl" /><br> -->
+	<label for="con">content</label><textarea rows="3" cols="40" class="con" name="con" ></textarea><input type="text"num"><br>
+	<label for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath"><br>
 	<button type="submit">提交</button>
 </form>
 
 </body>
 <script type="text/javascript">
 	function addContent(){
-		$("#contentBr").before("<textarea rows=\"3\" cols=\"40\" class=\"content\" name=\"content\"></textarea>");
+		$(".contentBr").before("<textarea rows=\"3\" cols=\"40\" class=\"content\" name=\"content\"></textarea>");
 	}
 	function addUrl() {
 		$("#urlBr").before("<input type=\"text\" class=\"url\" name=\"url\">");
