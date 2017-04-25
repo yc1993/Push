@@ -1,10 +1,14 @@
 package com.ezparking.spring.controller;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
 import org.springframework.ui.ModelMap;
+import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
@@ -29,19 +33,50 @@ public class Controller {
 	}
 	
 	@RequestMapping(value="/push", method=RequestMethod.POST)
-	public String push(HttpSession session ,ModelMap map, HttpServletRequest request, Content _content/*,String title, String iconUrl, String[] content, String[] url*/){
-		System.out.println("content:" +_content.getCon() + " imgPath:" + _content.getImgPath());
-		/*System.out.println("title:" + title + " iconUrl:" + iconUrl );
-		if (content != null && content.length > 0) {
-			for (String string : content) {
-				System.out.println("content:" + string);
+	public String push(HttpSession session ,ModelMap map, HttpServletRequest request, Content _content, String title, String iconUrl/*, String[] content, String[] url*/){
+		//获取所有字段包括空
+		String[] content = _content.getCon().split(",");
+		String[] imgPath = _content.getImgPath().split(",");
+		//去除空字段
+		List<String> contentList = new ArrayList<String>();
+		for (String string : content) {
+			if (!StringUtils.isEmpty(string)) {
+				contentList.add(string);	
 			}
 		}
-		if (url != null && url.length > 0) {
-			for (String string : url) {
-				System.out.println("url:" + string);
+		List<String> imgPathList = new ArrayList<String>();
+		for (String string : imgPath) {
+			if (!StringUtils.isEmpty(string)) {
+				imgPathList.add(string);
 			}
-		}*/
+		}
+		//放入对象中
+		int a = 0, b = 0;
+		List<Content> newsContentList = new ArrayList<Content>();
+		for (int i = 0; i < (contentList.size() + imgPathList.size()); i++) {
+			Content newsContent = new Content();
+			if (i % 2 == 0) {
+				if (a < contentList.size() && (contentList.get(a) != null || contentList.get(a) != "")) {
+					newsContent.setCon(contentList.get(a));
+					a++;
+				}else {
+					newsContent.setImgPath(imgPathList.get(b));
+					b++;
+				}
+			}else {
+				if (b < imgPathList.size() && (imgPathList.get(b) != null || imgPathList.get(b) != "")) {
+					newsContent.setImgPath(imgPathList.get(b));
+					b++;
+				}else {
+					newsContent.setCon(contentList.get(a));
+					a++;
+				}
+			}
+			newsContent.setNum(i + 1);
+			newsContentList.add(newsContent);
+		}
+		System.out.println("title:" + title + " icon_url:" + iconUrl);
+		System.out.println(newsContentList);
 		return "redirect:push.do";
 	}
 }
