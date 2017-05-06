@@ -6,14 +6,37 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript" src="JS/jquery-3.2.1.min.js"></script>
-
+<style type="text/css">
+label{
+	width: 100px;
+	display: inline-block;
+}
+</style>
 </head>
 <body>
 <form action="push.do" method="post" accept-charset="UTF-8">
-	<!-- <label for="title">title</label><input type="text" id="title" name="title" class="title"/>&nbsp;&nbsp;&nbsp;&nbsp;<button type="button" onclick="">增加content</button>&nbsp;&nbsp;<button type="button" onclick="addUrl()">增加url</button><br><br>
-	<label for="icon_url">icon_url</label><input type="text" id="iconUrl" name="iconUrl" /><br> -->
-	<label for="con">content</label><textarea rows="3" cols="40" class="con" name="con" ></textarea><input type="text"num"><br>
-	<label for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath"><br>
+	<label class="lab" for="title">title</label><input type="text" id="title" name="title" class="title"/><br>
+	<label class="lab" for="icon_url">icon_url</label><input type="text" id="iconUrl" name="iconUrl" /><br> 
+	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
+	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
+	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
+	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
+	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
+	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
+	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
+	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
+	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
+	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
+	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
+	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
+	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
+	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
+	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
+	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
+	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
+	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
+	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
+	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
 	<button type="submit">提交</button>
 </form>
 

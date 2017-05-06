@@ -38,6 +38,11 @@ public class Content {
 	public void setNewsListID(int newsListID) {
 		this.newsListID = newsListID;
 	}
+	@Override
+	public String toString() {
+		return "Content [id=" + id + ", con=" + con + ", imgPath=" + imgPath + ", num=" + num + ", newsListID="
+				+ newsListID + "]";
+	}
 	
 	
 }
