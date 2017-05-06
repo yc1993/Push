@@ -9,35 +9,36 @@
 <style type="text/css">
 label{
 	width: 100px;
+	width: 60px;
 	display: inline-block;
 }
 </style>
 </head>
 <body>
 <form action="push.do" method="post" accept-charset="UTF-8">
-	<label class="lab" for="title">title</label><input type="text" id="title" name="title" class="title"/><br>
-	<label class="lab" for="icon_url">icon_url</label><input type="text" id="iconUrl" name="iconUrl" /><br> 
-	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
-	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
-	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
-	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
-	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
-	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
-	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
-	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
-	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
-	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
-	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
-	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
-	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
-	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
-	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
-	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
-	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
-	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
-	<label class="lab" for="con">content</label><textarea rows="3" cols="100" class="con" name="con" ></textarea><br>
-	<label class="lab" for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="150"><br><br>
-	<button type="submit">提交</button>
+	<button type="submit" style="width: 100px;">提交</button><br>
+	<label for="title">title</label><input type="text" id="title" name="title" class="title"/><br>
+	<label for="icon_url">icon_url</label><input type="text" id="iconUrl" name="iconUrl" /><br>
+	<label for="con">content</label><textarea rows="3" cols="150" class="con" name="con"></textarea><br>
+	<label for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="149"><br><br>
+	<label for="con">content</label><textarea rows="3" cols="150" class="con" name="con"></textarea><br>
+	<label for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="149"><br><br>
+	<label for="con">content</label><textarea rows="3" cols="150" class="con" name="con"></textarea><br>
+	<label for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="149"><br><br>
+	<label for="con">content</label><textarea rows="3" cols="150" class="con" name="con"></textarea><br>
+	<label for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="149"><br><br>
+	<label for="con">content</label><textarea rows="3" cols="150" class="con" name="con"></textarea><br>
+	<label for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="149"><br><br>
+	<label for="con">content</label><textarea rows="3" cols="150" class="con" name="con"></textarea><br>
+	<label for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="149"><br><br>
+	<label for="con">content</label><textarea rows="3" cols="150" class="con" name="con"></textarea><br>
+	<label for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="149"><br><br>
+	<label for="con">content</label><textarea rows="3" cols="150" class="con" name="con"></textarea><br>
+	<label for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="149"><br><br>
+	<label for="con">content</label><textarea rows="3" cols="150" class="con" name="con"></textarea><br>
+	<label for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="149"><br><br>
+	<label for="con">content</label><textarea rows="3" cols="150" class="con" name="con"></textarea><br>
+	<label for="imgPath">url</label><input type="text" id="imgPath" class="imgPath" name="imgPath" size="149"><br><br>
 </form>
 
 </body>
